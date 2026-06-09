@@ -15,5 +15,8 @@ sleep 1
 echo "cash: 500"
 while true; do
 	echo "would you like to start using the slot machine? (y or n)"
-	
+	read usless
+	if [[ $usless == "y" || $usless == "Y" ]]; then
+		echo "Rolling"
+		sleep 1
 
