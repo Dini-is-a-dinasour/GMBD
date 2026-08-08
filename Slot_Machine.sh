@@ -13,6 +13,7 @@ sleep 1
 echo "Youll start with 500 bucky bois, got it pookie?"
 sleep 1
 echo "cash: 500"
+
 while true; do
 	echo "would you like to start using the slot machine? (y or n)"
 	read usless
