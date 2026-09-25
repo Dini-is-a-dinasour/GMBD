@@ -1,2 +1,1 @@
-Tung tung tung sahur
-what the hell were u expecting gng
+everyday is another day to do nothing, and nothing i shall do.
