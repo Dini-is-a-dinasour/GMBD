@@ -9,7 +9,8 @@ echo -e "The use of this software, or any associated functionality for the purpo
 echo -e "By using this software, you acknowledge and agree to these restrictions."
 echo "press anything to continue"
 read e
-sleep 2
+sleep 0.2
+
 clear
 echo "now that the big boi words are out of the way..."
 sleep 2
@@ -48,10 +49,16 @@ read usless
     fi
 
 while true; do
-	echo "rolling (press 1 to start)"
+	echo "rolling (press enter to start)"
 	read mon
 	case $mon in 
 		1)
+			echo "exiting"
+			exit 0
+			;;
+
+
+        *)
 			((cash-=10))
 			sed -i "s/^cash:.*/cash: $cash/" cash.txt
 
@@ -97,10 +104,6 @@ while true; do
 			fi
             ;;
 
-        *)
-        	echo "exiting."
-        	exit 0
-            ;;
     esac
 
 done
