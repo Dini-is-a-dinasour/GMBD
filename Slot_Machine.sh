@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+echo "use https://mixkit.co/free-sound-effects/slot-machine/ for music and download audacity for terminal..."
 echo "NOTICE OF INTENDED USE AND DISCLAIMER"
 sleep 2
 echo -e "This software and associated materials are provided strictly for entertainment and recreational purposes. \n Nothing contained herein is intended to facilitate, promote, encourage, or constitute participation in gambling or wagering activities."
@@ -68,12 +69,14 @@ while true; do
 
               sleep 0.5
 			  clear
-
+			  aplay "SMA.wav" &>/dev/null
+ 
 			  gamb1=$((RANDOM % 7 + 1))
 			  gamb2=$((RANDOM % 7 + 1))
 			  gamb3=$((RANDOM % 7 + 1))
 
 			  echo "$gamb1 $gamb2 $gamb3"
+
 			  ((x+=1))
 
 			done
