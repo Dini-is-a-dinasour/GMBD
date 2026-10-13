@@ -1,11 +1,11 @@
 #!/bin/bash
+#this is the starter cards, the cards to be delt is in another file
+rank1=8
+suit1=♦
+rank2=Q
+suit2=♠
 
-rank1=J
-suit1=♣
-rank2=J
-suit2=♣
-rank3=6
-suit3=♦
+#variables go above from BlackJack.sh
 
 draw_card() {
     local rank="$1"
@@ -20,9 +20,8 @@ draw_card() {
     printf '└─────────┘\n'
 }
 
-
+#pastes the cards next to eachother
  paste -d ' ' \
     <(draw_card "$rank1" "$suit1") \
-    <(draw_card "$rank2" "$suit2") \
-    <(draw_card "$rank3" "$suit3")
+    <(draw_card "$rank2" "$suit2")
 
