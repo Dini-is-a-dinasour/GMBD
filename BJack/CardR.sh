@@ -1,6 +1,6 @@
 #!/bin/bash
 #this is the rest of the cards
-rank3=3
+rank3=6
 suit3=♠
 
 
