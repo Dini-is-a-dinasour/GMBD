@@ -42,12 +42,13 @@ while true; do
   read putin
 
   money=$((money - putin))
-if [ "$putin" > 0 ];then
+if (("$putin" > "0"));then
   pot=$((putin * 2))
 else
   pot=1
 fi
-  echo "pot: $pot money: $money1"
+  echo "pot: $pot"
+  echo "money: $money"
 
   echo "Dealers cards"
 
@@ -78,6 +79,13 @@ fi
            source Cardg.sh 
            source CardR.sh
            ((y += 1))
+           ####DEALERSTURN1#####
+           sleep 0.3
+           echo "Dealers turn..."
+           sleep 0.2
+           echo "Start!"
+
+
            ;;
          2)
            sed -i "s/^rank3=.*/rank3=$rank3/" CardR.sh

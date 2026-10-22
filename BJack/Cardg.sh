@@ -1,8 +1,8 @@
 #!/bin/bash
 #this is the starter cards, the cards to be delt is in another file
-rank1=9
+rank1=J
 suit1=♦
-rank2=7
+rank2=4
 suit2=♦
 
 #variables go above from BlackJack.sh
